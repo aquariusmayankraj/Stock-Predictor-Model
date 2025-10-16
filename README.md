@@ -1,4 +1,4 @@
-#Stock Market Price Predictor
+**Stock Market Price Predictor**
 
 A machine learning web application built with Python that predicts stock market prices using LSTM (Long Short-Term Memory) neural networks. This end-to-end ML project fetches historical stock data and uses deep learning to forecast future stock prices.
 
