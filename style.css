@@ -1,0 +1,33 @@
+/* === Global Styling === */
+body {
+    background: #0e1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === Animated Gradient Heading === */
+h1, h2, h3 {
+    background: linear-gradient(270deg, #00ffff, #ff00ff, #00ffff);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 20s ease infinite;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* === Optional Fade-in for Smooth Entry === */
+.stPlotlyChart, .stDataFrame, .stMarkdown {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
